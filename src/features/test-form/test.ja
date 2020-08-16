@@ -1,0 +1,121 @@
+<Form
+    onSubmit={onSubmit}
+    validate={(values) => submit(values)}
+    render={({ handleSubmit, submitting, }) => (
+      <form onSubmit={handleSubmit}>
+        <CaptionBox>
+          <CaptionImg src="/caption.png" />
+        </CaptionBox>
+        <div>
+          <Field
+            name="userName"
+            validate={required}
+          >
+            {({ input, meta }) => {
+              console.log(meta)
+              return (
+              <>
+                <FieldBox>
+                  <LabelBox>
+                    <label>User Name</label>
+                  </LabelBox>
+                  <InputBox>
+                    <Input {...input} type="text" error={meta.error && meta.touched} />
+                  </InputBox>
+                </FieldBox>
+                {meta.error && meta.touched && <ErrorSpan>{meta.error}</ErrorSpan>}
+              </>
+            )}}
+          </Field>
+        </div>
+        <div>
+          <Field
+            name="eMail"
+            validate={composeValidators(required, isUsername)}
+          >
+            {({ input, meta }) => (
+              <>
+                <FieldBox>
+                  <LabelBox>
+                    <label>E-Mail</label>
+                  </LabelBox>
+                  <InputBox>
+                    <Input {...input} type="text" error={meta.error && meta.touched} />
+                  </InputBox>
+                </FieldBox>
+                {meta.error && meta.touched && <ErrorSpan>{meta.error}</ErrorSpan>}
+              </>
+            )}
+          </Field>
+        </div>
+        <div>
+          <Field
+            name="phoneNumber"
+            validate={composeValidators(required, isUsername)}
+          >
+            {({ input, meta }) => (
+              <>
+                <FieldBox>
+                  <LabelBox>
+                    <label>Phone Number</label>
+                  </LabelBox>
+                  <InputBox>
+                    <Input {...input} type="text" error={meta.error && meta.touched} />
+                  </InputBox>
+                </FieldBox>
+                {meta.error && meta.touched && <ErrorSpan>{meta.error}</ErrorSpan>}
+              </>
+            )}
+          </Field>
+        </div>
+        <div>
+          <Field
+            name="password"
+            validate={composeValidators(required, isUsername)}
+          >
+            {({ input, meta }) => (
+              <>
+                <FieldBox>
+                  <LabelBox>
+                    <label>Password</label>
+                  </LabelBox>
+                  <InputBox>
+                    <Input {...input} type="text" error={meta.error && meta.touched} />
+                  </InputBox>
+                </FieldBox>
+                {meta.error && meta.touched && <ErrorSpan>{meta.error}</ErrorSpan>}
+              </>
+            )}
+          </Field>
+        </div>
+        <div>
+          <Field
+            name="passwordRepeat"
+            validate={composeValidators(required, isUsername)}
+          >
+            {({ input, meta }) => (
+              <>
+                <FieldBox>
+                  <LabelBox>
+                    <label>Password Repeat</label>
+                  </LabelBox>
+                  <InputBox>
+                    <Input {...input} type="text" error={meta.error && meta.touched} />
+                  </InputBox>
+                </FieldBox>
+                {meta.error && meta.touched && <ErrorSpan>{meta.error}</ErrorSpan>}
+              </>
+            )}
+          </Field>
+        </div>
+
+
+        <SubmitButtonBox>
+          <Button type="submit" disabled={submitting}>
+            Submit
+          </Button>
+        </SubmitButtonBox>
+
+      </form>
+    )}
+  />
