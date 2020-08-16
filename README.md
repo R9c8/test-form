@@ -1,68 +1,24 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Enapter junior frontend test task
 
-## Available Scripts
+Create a registration form with the following fields:
 
-In the project directory, you can run:
+-   User name (must be longer than 3 characters, only latin letters allowed, starts with capital letter)
+-   Email (must be a valid email)
+-   Phone number (must be a valid phone number; hyphens and parentheses for city code allowed)
+-   Password (must be longer than 6 characters, must include digits, upper and lower case letters,
+    may include special characters (`!@#$%^&*()}{><>}`) but must not include spaces or non-latin unicode characters)
+-   Password repeat (must be the same as Password)
 
-### `npm start`
+On form submission it should write result to browser console in form of JSON. Form must provide
+a _handy_ feedback to user if they made some mistakes when fill it. Only correct form can be submmitted.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Save your solution on GitHub, BitBucker or any other source code hosting and send me a link.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Please note
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+-   I will ask you how _everything_ works in your solution, be ready to explain
+-   No libraries preferred, but you can use whatever you want if you can justify your choice.
+-   Basic UI design skills are in requirements, so interpret "a _handy_ feedback" according to your understanding of a good UX
+-   So is English, therefore this task is in English; please write your comments in English as well
+-   I will judge not only solution but also the code, so pay attention to it
+-   If you have any questions, please, don't hesitate to reach me out in Telegram ([@rombek](https://t.me/rombek))
